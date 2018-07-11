@@ -1,0 +1,19 @@
+.itemList {
+  list-style: none;
+}
+
+.main__div {
+  background-color: pink;
+  margin: 10px;
+}
+
+.title__list {
+  color: #ED1EC4;
+}
+
+.change {
+  background-color: red;
+  border-radius: 20px;
+}
+
+/*# sourceMappingURL=main.css.map */

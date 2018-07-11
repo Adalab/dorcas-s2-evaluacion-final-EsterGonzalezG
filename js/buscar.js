@@ -9,23 +9,40 @@ var list=document.querySelector('.main__list-Search');
 
 button.addEventListener('click', showSearch);
 function showSearch() {
+  list.innerHTML='';
   fetch(url+text.value)
     .then(function(response){
       return response.json();
     })
     .then(function(datos){
-      var listItem='';
       for (i = 0; i < datos.length; i++) {
+        var imagenList=document.createElement('img');
+        imagenList.classList.add('main__image');
+        var itemLi = document.createElement('li');
+        itemLi.classList.add('main__itemList');
+        var hTitle=document.createElement('h2');
+        hTitle.classList.add('main__title-list');
+        var div=document.createElement('div');
+        div.classList.add('main__div');
+        var newContentItem = document.createTextNode(datos[i].show.name);
 
         if (datos[i].show.image===null) {
 
-          listItem =  listItem + '<li class="itemList"><div class="main__div">' +'<img src="' +imageDefault+'"/>' +'<h2 class="title__list">'+ datos[i].show.name+ '<h2></div></li>';
+          imagenList.src = imageDefault;
         }else{
-          listItem =  listItem + '<li class="itemList"><div class="main__div">' +'<img src="' +datos[i].show.image.medium+'"/>' +'<h2 class="title__list">'+ datos[i].show.name+ '<h2></div></li>';
+          imagenList.src =datos[i].show.image.medium;
+          //console.log(img.src +=datos[i].show.image.medium);
+
         }
+        div.appendChild(imagenList);
+        hTitle.appendChild(newContentItem);
+        div.appendChild(hTitle);
+        itemLi.appendChild(div);
+        list.appendChild(itemLi);
 
       }
-      list.innerHTML=listItem;
+
+
       favorite();
     });
 }
@@ -37,6 +54,6 @@ function favorite() {
   }
 }
 
-  function cambiar(event) {
-    event.currentTarget.classList.toggle("change");
+function cambiar(event) {
+  event.currentTarget.classList.toggle('change');
 }

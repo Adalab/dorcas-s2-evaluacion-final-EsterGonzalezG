@@ -1,0 +1,23 @@
+.hearder__title{
+  text-align: center;
+}
+.main{
+  &__container{
+    display: flex;
+    justify-content: center;
+  }
+  &__title-list{
+    text-align: center;
+  }
+  &__text{
+
+    border:0px;
+    border-bottom:2px solid $colorBottomInputSearch;
+    width: 300px;
+    margin-right: 5px;
+  }
+}
+
+input::-webkit-input-placeholder {
+  color: $colorTextPlaceholderImput;
+}

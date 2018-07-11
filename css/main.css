@@ -1,3 +1,24 @@
+.main__list-Search {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+.main__div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
 .main__itemList {
   list-style: none;
 }
@@ -5,6 +26,7 @@
 .main__div {
   background-color: #EEAFE1;
   margin: 10px;
+  height: 450px;
 }
 
 .main__title-list {
@@ -19,7 +41,43 @@
 .change {
   background-color: #55E6F0;
   border-radius: 10px;
-  color: #85929E;
+}
+
+.main__button {
+  border: none;
+  background-color: #800040;
+  color: white;
+  width: 80px;
+  height: 30px;
+  font-size: 14px;
+}
+
+.hearder__title {
+  text-align: center;
+}
+
+.main__container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+
+.main__title-list {
+  text-align: center;
+}
+
+.main__text {
+  border: 0px;
+  border-bottom: 2px solid #989292;
+  width: 300px;
+  margin-right: 5px;
+}
+
+input::-webkit-input-placeholder {
+  color: #000000;
 }
 
 /*# sourceMappingURL=main.css.map */

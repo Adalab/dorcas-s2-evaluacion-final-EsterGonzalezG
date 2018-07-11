@@ -1,0 +1,23 @@
+.main{
+  &__itemList{
+    list-style: none;
+
+  }
+  &__div{
+    background-color: $colorBackgroundDiv;
+    margin: 10px;
+    height: 450px;
+  }
+  &__title-list{
+    color:$colorTitleList;
+    padding: 10px;
+  }
+  &__image{
+    margin: 10px;
+  }
+}
+
+.change{
+  background-color: $colorBackgroundChange;
+  border-radius: 10px;
+}

@@ -5,8 +5,9 @@
 	},
 	"js": {
 		"src": [
-			"js/buscar.js",
-			"js/main.js"
+
+			"js/main.js",
+			"js/search.js"
 
 		],
 		"dest": "js/"

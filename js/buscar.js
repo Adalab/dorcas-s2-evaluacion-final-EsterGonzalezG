@@ -31,8 +31,6 @@ function showSearch() {
           imagenList.src = imageDefault;
         }else{
           imagenList.src =datos[i].show.image.medium;
-          //console.log(img.src +=datos[i].show.image.medium);
-
         }
         div.appendChild(imagenList);
         hTitle.appendChild(newContentItem);

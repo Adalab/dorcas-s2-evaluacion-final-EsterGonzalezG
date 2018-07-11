@@ -1,19 +1,25 @@
-.itemList {
+.main__itemList {
   list-style: none;
 }
 
 .main__div {
-  background-color: pink;
+  background-color: #EEAFE1;
   margin: 10px;
 }
 
-.title__list {
+.main__title-list {
   color: #ED1EC4;
+  padding: 10px;
+}
+
+.main__image {
+  margin: 10px;
 }
 
 .change {
-  background-color: red;
-  border-radius: 20px;
+  background-color: #55E6F0;
+  border-radius: 10px;
+  color: #85929E;
 }
 
 /*# sourceMappingURL=main.css.map */

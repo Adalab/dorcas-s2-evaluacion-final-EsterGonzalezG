@@ -30,7 +30,7 @@
 }
 
 .main__title-list {
-  color: #ED1EC4;
+  color: #800040;
   padding: 10px;
 }
 
@@ -67,6 +67,7 @@
 
 .main__title-list {
   text-align: center;
+  color: #800040;
 }
 
 .main__text {

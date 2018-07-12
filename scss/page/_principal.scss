@@ -2,7 +2,6 @@
   margin:0;
   padding: 0;
 }
-
 .main{
   &__itemList{
     list-style: none;
@@ -12,6 +11,7 @@
     background-color: $colorBackgroundDiv;
     margin: 10px;
     height: 450px;
+    box-sizing: border-box;
   }
   &__title-list{
     color:$colorTitleList;
@@ -24,5 +24,5 @@
 
 .change{
   background-color: $colorBackgroundChange;
-  border:2px solid $colorBorderDiv  ;
+  border:2px solid $colorBorderDiv;
 }

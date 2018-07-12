@@ -32,6 +32,8 @@
   background-color: #EEAFE1;
   margin: 10px;
   height: 450px;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 .main__title-list {

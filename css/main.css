@@ -29,7 +29,7 @@
 }
 
 .main__div {
-  background-color: #EEAFE1;
+  background-color: #e8b3ce;
   margin: 10px;
   height: 450px;
   -webkit-box-sizing: border-box;
@@ -70,6 +70,7 @@
   -webkit-box-pack: center;
   -ms-flex-pack: center;
   justify-content: center;
+  margin: 20px 0;
 }
 
 .main__title-list {

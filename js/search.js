@@ -7,7 +7,7 @@ var hTitle;
 var div;
 var newContentItem;
 var imageDefault='https://via.placeholder.com/210x295/cccccc/666666/?text=TV';
-var url='http://api.tvmaze.com/search/shows?q=';
+var url='https://api.tvmaze.com/search/shows?q=';
 var button = document.querySelector('.main__button');
 var text=document.querySelector('.main__text');
 var list=document.querySelector('.main__list-Search');

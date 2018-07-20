@@ -12,6 +12,7 @@ var newContentItem;
 var textContent;
 var imageDefault='https://via.placeholder.com/210x295/cccccc/666666/?text=TV';
 var url='http://api.tvmaze.com/search/people?q=';
+var urlSeries='http://api.tvmaze.com/search/shows?q=';
 var button = document.querySelector('.main__button');
 var text=document.querySelector('.main__text');
 var list=document.querySelector('.main__list-Search');
@@ -54,7 +55,7 @@ function cambiar(event) {
 button.addEventListener('click', showSearch);
 function showSearch() {
   list.innerHTML='';
-  fetch(url+text.value)
+  fetch(urlSeries+text.value)
     .then(function(response){
       return response.json();
     })
